@@ -44,6 +44,7 @@ class Test(unittest.TestCase):
         else:
             return "Recibe premio"
 
+    #Caso de prueba 1
     def test_tema1_prueba_1(self):
         # inserte su codigo de prueba
         mensaje_plazo_1 = self.Test.validar_plazo_dias_1(120)

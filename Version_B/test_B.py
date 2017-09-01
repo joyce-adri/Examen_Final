@@ -50,7 +50,7 @@ class Test(unittest.TestCase):
 	def test_tema7_prueba_ID(self):
 		#id:7
 		plazo=360
-		montoInversion=50001
+		montoInversion=50005
 		msg=premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
 		self.assertEquals(msg,"Tipo de premio: tv led LG")
 	def test_tema8_prueba_ID(self):

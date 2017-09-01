@@ -61,11 +61,41 @@ class Test(unittest.TestCase):
         self.assertEquals(resultado, esperado)
 
 ##INICIA TEMA 2
-    def test_tema2_prueba_ID(self):
-        #Dummy test
-        resultado = 1
-        esperado = 1
+    def test_tema2_prueba_1(self):
+        resultado = tema2.clasificacion_clientes(3000,False)
+        esperado = "Tipo de cliente: no es digno de crédito, Envio de boletin: No"
         self.assertEquals(resultado, esperado)
+
+    def test_tema2_prueba_2(self):
+        resultado = tema2.clasificacion_clientes(30000,True)
+        esperado = "Tipo de cliente: AAA, Envio de boletin: Si"
+        self.assertEquals(resultado, esperado)
+
+    def test_tema2_prueba_3(self):
+        resultado = tema2.clasificacion_clientes(25000,True)
+        esperado = "Tipo de cliente: AA, Envio de boletin: Si"
+        self.assertEquals(resultado, esperado)
+
+    def test_tema2_prueba_4(self):
+        resultado = tema2.clasificacion_clientes(15000,True)
+        esperado = "Tipo de cliente: A, Envio de boletin: Si"
+        self.assertEquals(resultado, esperado)
+
+    def test_tema2_prueba_5(self):
+        resultado = tema2.clasificacion_clientes(10000,True)
+        esperado = "Tipo de cliente: B, Envio de boletin: Si"
+        self.assertEquals(resultado, esperado)
+
+    def test_tema2_prueba_6(self):
+        resultado = tema2.clasificacion_clientes(5000,True)
+        esperado = "Tipo de cliente: C, Envio de boletin: Si"
+        self.assertEquals(resultado, esperado)
+
+    def test_tema2_prueba_7(self):
+        resultado = tema2.clasificacion_clientes(2000,True)
+        esperado = "Tipo de cliente: no es digno de crédito, Envio de boletin: Si"
+        self.assertEquals(resultado, esperado)
+
 
 if __name__ == '__main__':
     unittest.main()

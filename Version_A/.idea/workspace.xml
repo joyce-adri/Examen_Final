@@ -18,8 +18,8 @@
       <file leaf-file-name="test_A.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_A.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="30" column="71" lean-forward="true" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+            <state relative-caret-position="340">
+              <caret line="32" column="44" lean-forward="false" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -287,6 +287,12 @@
     <history-entry file="Unittests_in_test_A - 2017.09.01 at 08h 52m 36s.xml">
       <configuration name="Unittests in test_A" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_A - 2017.09.01 at 08h 53m 16s.xml">
+      <configuration name="Unittests in test_A" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_A - 2017.09.01 at 08h 53m 29s.xml">
+      <configuration name="Unittests in test_A" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -337,8 +343,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_A.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="71" lean-forward="true" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+        <state relative-caret-position="340">
+          <caret line="32" column="44" lean-forward="false" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
           <folding />
         </state>
       </provider>

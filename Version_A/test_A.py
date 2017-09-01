@@ -10,13 +10,16 @@ class Test(unittest.TestCase):
 # >>>>>> Estructura para la codificacion de los casos de prueba <<<<<<
 # Reemplazar EL ID por el numero correspondiente del caso de prueba
     
-    def test_tema1_prueba_ID(self):
+    def test_tema1_prueba_1(self):
         # inserte su codigo de prueba
-        self.assertEquals()
+        msg = tema1.etiquetado_consumo_energia(60)
+        print(msg)
+        self.assertEquals(msg, "escala: B , eficiencia: los más eficientes")
 
-    def test_tema2_prueba_ID(self):
+
+    #def test_tema2_prueba_ID(self):
         # inserte su codigo de prueba
-        self.assertEquals()
+    #    self.assertEquals()
 
 if __name__ == '__main__':
     unittest.main()

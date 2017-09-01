@@ -46,5 +46,9 @@ class Test(unittest.TestCase):
 		result = tema1.etiquetado_consumo_energia(130)
 		self.assertEquals(result, "escala: G , eficiencia: alto consumo energético", "failure")
 
+	def test_tema2_prueba_1(self):
+		result = tema2.clasificacion_clientes(0, False)
+		self.assertEquals(result, "Tipo de cliente: no es digno de crédito, Envio de boletin: No", "failure")
+
 if __name__ == '__main__':
 	unittest.main()

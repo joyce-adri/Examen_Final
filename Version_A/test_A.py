@@ -38,13 +38,10 @@ class Test(unittest.TestCase):
     def test_tema1_prueba_9(self):
         #Prueba 9
         self.assertEqual(tema1.etiquetado_consumo_energia(500),"escala: G , eficiencia: alto consumo energético")
-    
-        
-    
-
-    #def test_tema2_prueba_ID(self):
+    def test_tema2_prueba_1(self):
+        self.assertEqual(tema2.clasificacion_clientes(5000,True),"Tipo de cliente: C, Envio de boletin: Si","tema 2 correcto solo 1 caso")
         # inserte su codigo de prueba
-    #    self.assertEquals()
+        
 
 if __name__ == '__main__':
     unittest.main()

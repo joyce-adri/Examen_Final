@@ -80,15 +80,15 @@ class Test(unittest.TestCase):
     	self.assertEquals(premio, "Tipo de premio: licuadora electrolux")
 
     def test_tema1_prueba_7(self):
-    	premio = premio_por_deposito_a_plazo_fijo(plazo=360, montoInversion=50002)
+    	premio = premio_por_deposito_a_plazo_fijo(360, 50001)
     	self.assertEquals(premio, "Tipo de premio: tv led LG")
 
     def test_tema1_prueba_8(self):
-    	premio = premio_por_deposito_a_plazo_fijo(plazo=360, montoInversion=20002)
+    	premio = premio_por_deposito_a_plazo_fijo(plazo=360, montoInversion=20001)
     	self.assertEquals(premio, "Tipo de premio: tablet samsumg")
 
     def test_tema1_prueba_9(self):
-    	premio = premio_por_deposito_a_plazo_fijo(plazo=360, montoInversion=10002)
+    	premio = premio_por_deposito_a_plazo_fijo(plazo=360, montoInversion=10001)
     	self.assertEquals(premio, "Tipo de premio: microondas electrolux")
 
 

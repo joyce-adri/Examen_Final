@@ -30,6 +30,11 @@ class Test(unittest.TestCase):
     def test_tema1_prueba_6(self):
         eti = etiquetado_consumo_energia(95)
         self.assertEquals(eti, "escala: D , eficiencia: consumo medio")
+    def test_tema1_prueba_7(self):
+        eti = etiquetado_consumo_energia(101)
+        self.assertEquals(eti, "escala: E , eficiencia: consumo medio")
+
+
 	#============================================#
 """
     def test_tema2_prueba_ID(self):

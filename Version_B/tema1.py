@@ -1,29 +1,28 @@
 # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-class Premios:
-    def premios_depositos_plazo_fijo(self,plazo,monto):
-        if monto>10000 & monto < 20001:
-             # se ejecuta otro codigo
-            if plazo==120:
-    	     return "Arrocera Electrolux"
-            elif plazo== 180:
-             return "Licuadora 5 Velocidades"
-            else:
-             return "Microondas Electrolux"
-        elif monto>20000 & monto < 50001:
-        # se ejecuta otro codigo
-            if plazo == 120:
-                return "Aspiradora Electrolux"
-            elif plazo == 180:
-                return "Samsung Galaxy j1"
-            else:
-                return "Tablet Samsung"
-        elif monto>50000:
-        # se ejecuta otro codigo
-            if plazo == 120:
-                return "mini nevera 5 pies"
-            elif plazo == 180:
-                return "minicomponente LG"
-            else:
-                return "tv LED 32 LG"
+def premio_por_deposito_a_plazo_fijo(plazo, montoInversion):
+    premio = "no recibe premio"
+    if plazo is 120:
+        if montoInversion >= 50001:
+            premio = "mini nevera electrolux"
+        elif montoInversion >= 20001 and montoInversion < 50001:
+            premio = "aspiradora electrolux"
+        elif montoInversion >= 10001 and montoInversion < 20001:
+            premio = "arrocera electrolux"
+    elif plazo is 180:
+        if montoInversion >= 50001:
+            premio = "minicomponente LG"
+        elif montoInversion >= 20001 and montoInversion < 50001:
+            premio = "samsumg galaxy J1"
+        elif montoInversion >= 10001 and montoInversion < 20001:
+            premio = "licuadora electrolux"
+    elif plazo is 360:
+        if montoInversion >= 50001:
+            premio = "tv led LG"
+        elif montoInversion >= 20001 and montoInversion < 50001:
+            premio = "tablet samsumg"
+        elif montoInversion >= 10001 and montoInversion < 20001:
+            premio = "microondas electrolux"
+    return "Tipo de premio: %s" % premio

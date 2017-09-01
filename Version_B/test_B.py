@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 import unittest
 import tema1
 import tema2
-
+from tema1 import premio_por_deposito_a_plazo_fijo
 
 class Test(unittest.TestCase):
     
@@ -15,48 +15,42 @@ class Test(unittest.TestCase):
         # inserte su codigo de prueba
             plazo = 120
             monto = 15000
-            premio = Premios()
-            msg = premio.premios_depositos_plazo_fijo(plazo, monto)
-            self.assertEquals(msg, "Arrocera Electrolux")
+            msg = premio_por_deposito_a_plazo_fijo(plazo, monto)
+            self.assertEquals(msg, "arrocera electrolux")
 
     def test_tema1_prueba_2(self):
         # inserte su codigo de prueba
             plazo = 180
             monto = 25000
-            premio = Premios()
-            msg = premio.premios_depositos_plazo_fijo(plazo, monto)
-            self.assertEquals(msg, "Licuadora 5 Velocidades")
+            msg = premio_por_deposito_a_plazo_fijo(plazo, monto)
+            self.assertEquals(msg, "licuadora electrolux")
 
     def test_tema1_prueba_3(self):
         # inserte su codigo de prueba
             plazo = 360
             monto = 52000
-            premio = Premios()
-            msg = premio.premios_depositos_plazo_fijo(plazo, monto)
+            msg = premio_por_deposito_a_plazo_fijo(plazo, monto)
             self.assertEquals(msg, "Microondas Electrolux")
     def test_tema1_prueba_4(self):
         # inserte su codigo de prueba
             plazo = 120
             monto = 12000
-            premio = Premios()
-            msg = premio.premios_depositos_plazo_fijo(plazo, monto)
-            self.assertEquals(msg, "Aspiradora Electrolux")
+            msg = premio_por_deposito_a_plazo_fijo(plazo, monto)
+            self.assertEquals(msg, "aspiradora electrolux")
 
     def test_tema1_prueba_5(self):
         # inserte su codigo de prueba
             plazo = 180
             monto = 25000
-            premio = Premios()
-            msg = premio.premios_depositos_plazo_fijo(plazo, monto)
-            self.assertEquals(msg, "Samsung Galaxy j1")
+            msg=premio_por_deposito_a_plazo_fijo(plazo, monto)
+            self.assertEquals(msg, "samsumg galaxy J1")
 
 
     def test_tema1_prueba_6(self):
         # inserte su codigo de prueba
         plazo = 360
         monto = 52000
-        premio = Premios()
-        msg = premio.premios_depositos_plazo_fijo(plazo, monto)
+        msg =premio_por_deposito_a_plazo_fijo(plazo, monto)
         self.assertEquals(msg, "Tablet Samsung")
 
 
@@ -64,24 +58,21 @@ class Test(unittest.TestCase):
         # inserte su codigo de prueba
         plazo = 120
         monto = 15000
-        premio = Premios()
-        msg = premio.premios_depositos_plazo_fijo(plazo, monto)
-        self.assertEquals(msg, "mini nevera 5 pies")
+        msg =premio_por_deposito_a_plazo_fijo(plazo, monto)
+        self.assertEquals(msg, "mini nevera electrolux")
 
     def test_tema1_prueba_8(self):
         # inserte su codigo de prueba
         plazo = 180
         monto = 25000
-        premio = Premios()
-        msg = premio.premios_depositos_plazo_fijo(plazo, monto)
+        msg = premio_por_deposito_a_plazo_fijo(plazo, monto)
         self.assertEquals(msg, "minicomponente LG")
 
     def test_tema1_prueba_9(self):
         # inserte su codigo de prueba
         plazo = 360
         monto = 52000
-        premio = Premios()
-        msg = premio.premios_depositos_plazo_fijo(plazo, monto)
+        msg = premio_por_deposito_a_plazo_fijo(plazo, monto)
         self.assertEquals(msg, "tv LED 32 LG")
 
    # def test_tema2_prueba_ID(self):

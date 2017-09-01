@@ -50,29 +50,29 @@ class Test(unittest.TestCase):
 		result = tema2.clasificacion_clientes(0, False)
 		self.assertEquals(result, "Tipo de cliente: no es digno de crédito, Envio de boletin: No", "failure")
 
-	def test_tema2_prueba_2(self):
-		result = tema2.clasificacion_clientes(35000, True)
-		self.assertEquals(result, "Tipo de cliente: AAA, Envio de boletin: Si", "failure")
+	# def test_tema2_prueba_2(self):
+	# 	result = tema2.clasificacion_clientes(35000, True)
+	# 	self.assertEquals(result, "Tipo de cliente: AAA, Envio de boletin: Si", "failure")
 
-	def test_tema2_prueba_3(self):
-		result = tema2.clasificacion_clientes(25000, True)
-		self.assertEquals(result, "Tipo de cliente: AA, Envio de boletin: Si", "failure")
+	# def test_tema2_prueba_3(self):
+	# 	result = tema2.clasificacion_clientes(25000, True)
+	# 	self.assertEquals(result, "Tipo de cliente: AA, Envio de boletin: Si", "failure")
 
-	def test_tema2_prueba_4(self):
-		result = tema2.clasificacion_clientes(17000, True)
-		self.assertEquals(result, "Tipo de cliente: A, Envio de boletin: Si", "failure")
+	# def test_tema2_prueba_4(self):
+	# 	result = tema2.clasificacion_clientes(17000, True)
+	# 	self.assertEquals(result, "Tipo de cliente: A, Envio de boletin: Si", "failure")
 
-	def test_tema2_prueba_5(self):
-		result = tema2.clasificacion_clientes(12000, True)
-		self.assertEquals(result, "Tipo de cliente: B, Envio de boletin: Si", "failure")
+	# def test_tema2_prueba_5(self):
+	# 	result = tema2.clasificacion_clientes(12000, True)
+	# 	self.assertEquals(result, "Tipo de cliente: B, Envio de boletin: Si", "failure")
 
-	def test_tema2_prueba_6(self):
-		result = tema2.clasificacion_clientes(7000, True)
-		self.assertEquals(result, "Tipo de cliente: C, Envio de boletin: Si", "failure")
+	# def test_tema2_prueba_6(self):
+	# 	result = tema2.clasificacion_clientes(7000, True)
+	# 	self.assertEquals(result, "Tipo de cliente: C, Envio de boletin: Si", "failure")
 
-	def test_tema2_prueba_7(self):
-		result = tema2.clasificacion_clientes(-1000, True)
-		self.assertEquals(result, "Tipo de cliente: no es digno de crédito, Envio de boletin: Si", "failure")
+	# def test_tema2_prueba_7(self):
+	# 	result = tema2.clasificacion_clientes(-1000, True)
+	# 	self.assertEquals(result, "Tipo de cliente: no es digno de crédito, Envio de boletin: Si", "failure")
 
 if __name__ == '__main__':
 	unittest.main()

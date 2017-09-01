@@ -14,10 +14,27 @@ class Test(unittest.TestCase):
 		msg=tema1.premio_por_deposito_a_plazo_fijo(120,60001)
 		self.assertEquals(msg,"Tipo de premio: mini nevera electrolux")
 
-
-    #def test_tema2_prueba_ID(self):
-        # inserte su codigo de prueba
-        #self.assertEquals()
-
+	def test_tema2_prueba_2(self):
+		msg=tema1.premio_por_deposito_a_plazo_fijo(120,30001)
+		self.assertEquals(msg,"Tipo de premio: aspiradora electrolux")
+	
+	def test_tema2_prueba_3(self):
+		msg=tema1.premio_por_deposito_a_plazo_fijo(120,15001)
+		self.assertEquals(msg,"Tipo de premio: arrocera electrolux")
+	
+	def test_tema2_prueba_4(self):
+		msg=tema1.premio_por_deposito_a_plazo_fijo(180,60001)
+		self.assertEquals(msg,"Tipo de premio: minicomponente LG")
+	
+	def test_tema2_prueba_5(self):
+		msg=tema1.premio_por_deposito_a_plazo_fijo(180,30001)
+		self.assertEquals(msg,"Tipo de premio: samsumg galaxy J1")
+	
+	def test_tema2_prueba_6(self):
+		msg=tema1.premio_por_deposito_a_plazo_fijo(180,15001)
+		self.assertEquals(msg,"Tipo de premio: licuadora electrolux")
+	
+	
+		
 if __name__ == '__main__':
     unittest.main()

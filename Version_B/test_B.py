@@ -5,6 +5,50 @@ import unittest
 import tema1
 import tema2
 
+def premio_por_deposito_a_plazo_fijo(plazo, montoInversion):
+    premio = "no recibe premio"
+    if plazo is 120:
+        if montoInversion >= 50001:
+            premio = "mini nevera electrolux"
+        elif montoInversion >= 20001 and montoInversion < 50001:
+            premio = "aspiradora electrolux"
+        elif montoInversion >= 10001 and montoInversion < 20001:
+            premio = "arrocera electrolux"
+    elif plazo is 180:
+        if montoInversion >= 50001:
+            premio = "minicomponente LG"
+        elif montoInversion >= 20001 and montoInversion < 50001:
+            premio = "samsumg galaxy J1"
+        elif montoInversion >= 10001 and montoInversion < 20001:
+            premio = "licuadora electrolux"
+    elif plazo is 360:
+        if montoInversion >= 50001:
+            premio = "tv led LG"
+        elif montoInversion >= 20001 and montoInversion < 50001:
+            premio = "tablet samsumg"
+        elif montoInversion >= 10001 and montoInversion < 20001:
+            premio = "microondas electrolux"
+    return "Tipo de premio: %s" % premio
+
+def ofrecer_tarjeta_con_chip(montoEndeudamiento, tipoCliente):
+    tipoTarjeta = "Clasica"
+    if tipoCliente == "AAA":
+        if montoEndeudamiento >= 20000:
+            tipoTarjeta = "Gold"
+    elif tipoCliente == "AA":
+        if montoEndeudamiento >= 15000 and montoEndeudamiento < 20000:
+            tipoTarjeta = "Platinum"
+    elif tipoCliente == "A":
+        if montoEndeudamiento >= 10000 and montoEndeudamiento < 15000:
+            tipoTarjeta = "Internacional"
+    elif tipoCliente == "B":
+        if montoEndeudamiento >= 5000 and montoEndeudamiento < 10000:
+            tipoTarjeta = "Club Miles"
+    elif tipoCliente == "C":
+        if montoEndeudamiento >= 3000 and montoEndeudamiento < 5000:
+            tipoTarjeta = "Advantage"
+    return "Tipo de tarjeta: %s" % tipoTarjeta
+
 
 class Test(unittest.TestCase):
     
@@ -53,9 +97,27 @@ class Test(unittest.TestCase):
 
 
 
-    def test_tema2_prueba_ID(self):
-        # inserte su codigo de prueba
-        self.assertEquals()
+    def test_tema2_prueba_1(self):
+    	premio = ofrecer_tarjeta_con_chip(montoEndeudamiento=20001, tipoCliente="AAA")
+    	self.assertEquals(premio, "Tipo de tarjeta: Gold")
+
+    def test_tema2_prueba_2(self):
+    	premio = ofrecer_tarjeta_con_chip(montoEndeudamiento=15001, tipoCliente="AA")
+    	self.assertEquals(premio, "Tipo de tarjeta: Platinum")
+
+    def test_tema2_prueba_3(self):
+    	premio = ofrecer_tarjeta_con_chip(montoEndeudamiento=10001, tipoCliente="A")
+    	self.assertEquals(premio, "Tipo de tarjeta: Internacional")
+
+    def test_tema2_prueba_4(self):
+    	premio = ofrecer_tarjeta_con_chip(montoEndeudamiento=5001, tipoCliente="B")
+    	self.assertEquals(premio, "Tipo de tarjeta: Club Miles")
+
+    def test_tema2_prueba_5(self):
+    	premio = ofrecer_tarjeta_con_chip(montoEndeudamiento=3001, tipoCliente="C")
+    	self.assertEquals(premio, "Tipo de tarjeta: Advantage")
+
+
 
 if __name__ == '__main__':
     unittest.main()

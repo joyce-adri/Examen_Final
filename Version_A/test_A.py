@@ -55,11 +55,6 @@ class Test(unittest.TestCase):
         etiqueta = tema1.etiquetado_consumo_energia(130);
         self.assertEqual(etiqueta, "escala: G , eficiencia: alto consumo energético");
 
-    #tema 1 prueba 10 con un porcentaje de consumo de energía del -1%
-    def test_tema1_prueba_10(self):
-        etiqueta = tema1.etiquetado_consumo_energia(-1);
-        self.assertEqual(etiqueta, "escala: ninguna , eficiencia: ninguno");
-
 
     #tema 2 prueba 1 con un monto de deposito de 50000
     def test_tema2_prueba_1(self):

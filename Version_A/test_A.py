@@ -12,10 +12,11 @@ class Test(unittest.TestCase):
 # Reemplazar EL ID por el numero correspondiente del caso de prueba
     
     def test_tema1_prueba_1(self):
-        # inserte su codigo de prueba
         eti = etiquetado_consumo_energia(20)
         self.assertEquals(eti, "escala: A++ , eficiencia: los más eficientes")
-
+    def test_tema1_prueba_2(self):
+        eti = etiquetado_consumo_energia(32)
+        self.assertEquals(eti, "escala: A+ , eficiencia: los más eficientes")
 	#============================================#
 """
     def test_tema2_prueba_ID(self):

@@ -13,39 +13,39 @@ class Test(unittest.TestCase):
     
     def test_tema1_prueba_1(self):
     	premio = premio_por_deposito_a_plazo_fijo(plazo=120, montoInversion=50002)
-        self.assertEquals(premio, "mini nevera electrolux")
+        self.assertEquals(premio, "Tipo de premio: mini nevera electrolux")
 
     def test_tema1_prueba_2(self):
     	premio = premio_por_deposito_a_plazo_fijo(plazo=120, montoInversion=20002)
-        self.assertEquals(premio, "aspiradora electrolux")
+        self.assertEquals(premio, "Tipo de premio: aspiradora electrolux")
 
     def test_tema1_prueba_3(self):
     	premio = premio_por_deposito_a_plazo_fijo(plazo=120, montoInversion=10002)
-        self.assertEquals(premio, "arrocera electrolux")
+        self.assertEquals(premio, "Tipo de premio: arrocera electrolux")
 
     def test_tema1_prueba_4(self):
     	premio = premio_por_deposito_a_plazo_fijo(plazo=180, montoInversion=50002)
-    	self.assertEquals(premio, "minicomponente LG")
+    	self.assertEquals(premio, "Tipo de premio: minicomponente LG")
 
     def test_tema1_prueba_5(self):
     	premio = premio_por_deposito_a_plazo_fijo(plazo=180, montoInversion=20002)
-    	self.assertEquals(premio, "samsumg galaxy J1")
+    	self.assertEquals(premio, "Tipo de premio: samsumg galaxy J1")
 
     def test_tema1_prueba_6(self):
     	premio = premio_por_deposito_a_plazo_fijo(plazo=180, montoInversion=10002)
-    	self.assertEquals(premio, "licuadora electrolux")
+    	self.assertEquals(premio, "Tipo de premio: licuadora electrolux")
 
     def test_tema1_prueba_7(self):
     	premio = premio_por_deposito_a_plazo_fijo(plazo=360, montoInversion=50002)
-    	self.assertEquals(premio, "tv led LG")
+    	self.assertEquals(premio, "Tipo de premio: tv led LG")
 
     def test_tema1_prueba_8(self):
     	premio = premio_por_deposito_a_plazo_fijo(plazo=360, montoInversion=20002)
-    	self.assertEquals(premio, "tablet samsumg")
+    	self.assertEquals(premio, "Tipo de premio: tablet samsumg")
 
     def test_tema1_prueba_9(self):
     	premio = premio_por_deposito_a_plazo_fijo(plazo=360, montoInversion=10002)
-    	self.assertEquals(premio, "microondas electrolux")
+    	self.assertEquals(premio, "Tipo de premio: microondas electrolux")
 
 
 

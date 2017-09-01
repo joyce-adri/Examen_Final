@@ -2,7 +2,8 @@
 from __future__ import unicode_literals
 
 import unittest
-
+from Version_A import *
+from Version_A import tema2
 from Version_A.tema2 import clasificacion_clientes
 
 class Test(unittest.TestCase):

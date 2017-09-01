@@ -89,6 +89,57 @@ class Test(unittest.TestCase):
         self.assertEquals(msg,"Tipo de tarjeta: Advantage")
 
 
+    def test_tema2_prueba_ID6(self):
+        # inserte su codigo de prueba
+        msg=tema2.ofrecer_tarjeta_con_chip(10,"AAA")
+        self.assertEquals(msg,"Tipo de tarjeta: Clasica")
+
+
+    def test_tema2_prueba_ID7(self):
+        # inserte su codigo de prueba
+        msg=tema2.ofrecer_tarjeta_con_chip(99999999,"AA")
+        self.assertEquals(msg,"Tipo de tarjeta: Clasica")
+
+
+    def test_tema2_prueba_ID8(self):
+        # inserte su codigo de prueba
+        msg=tema2.ofrecer_tarjeta_con_chip(10,"AA")
+        self.assertEquals(msg,"Tipo de tarjeta: Clasica")
+
+
+    def test_tema2_prueba_ID9(self):
+        # inserte su codigo de prueba
+        msg=tema2.ofrecer_tarjeta_con_chip(99999999,"A")
+        self.assertEquals(msg,"Tipo de tarjeta: Clasica")
+
+
+    def test_tema2_prueba_ID10(self):
+        # inserte su codigo de prueba
+        msg=tema2.ofrecer_tarjeta_con_chip(10,"A")
+        self.assertEquals(msg,"Tipo de tarjeta: Clasica")
+
+
+    def test_tema2_prueba_ID11(self):
+        # inserte su codigo de prueba
+        msg=tema2.ofrecer_tarjeta_con_chip(99999999,"B")
+        self.assertEquals(msg,"Tipo de tarjeta: Clasica")
+
+    def test_tema2_prueba_ID12(self):
+        # inserte su codigo de prueba
+        msg=tema2.ofrecer_tarjeta_con_chip(10,"B")
+        self.assertEquals(msg,"Tipo de tarjeta: Clasica")
+
+    def test_tema2_prueba_ID13(self):
+        # inserte su codigo de prueba
+        msg=tema2.ofrecer_tarjeta_con_chip(99999999,"C")
+        self.assertEquals(msg,"Tipo de tarjeta: Clasica")
+
+
+    def test_tema2_prueba_ID14(self):
+        # inserte su codigo de prueba
+        msg=tema2.ofrecer_tarjeta_con_chip(10,"C")
+        self.assertEquals(msg,"Tipo de tarjeta: Clasica")
+
 
 
 if __name__ == '__main__':

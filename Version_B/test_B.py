@@ -12,7 +12,7 @@ class Test(unittest.TestCase):
 # Reemplazar EL ID por el numero correspondiente del caso de prueba
 
     def test_tema1_prueba_1(self):
-        plazo = 120
+        plazo = 360
         montoInversion = 50002
         premio = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
         self.assertEquals(premio, "Tipo de premio: mini nevera electrolux")
@@ -23,12 +23,11 @@ class Test(unittest.TestCase):
         premio = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
         self.assertEquals(premio, "Tipo de premio: minicomponente LG")
 
-    def test_tema1_prueba_3(self):
+    def test_tema1_prueba_2(self):
         plazo = 360
         montoInversion = 50002
         premio = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
         self.assertEquals(premio, "Tipo de premio: tv led LG")
-
 
     '''
     def test_tema2_prueba_1(self):

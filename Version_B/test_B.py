@@ -48,23 +48,23 @@ class Test(unittest.TestCase):
 		premio = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
 		self.assertEqual(premio,"Tipo de premio: licuadora electrolux")
 
-	# def test_tema1_prueba_7(self):
-	# 	plazo = 360
-	# 	montoInversion = 50005
-	# 	premio = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
-	# 	self.assertEqual(premio,"Tipo de premio: tv led LG")
+	def test_tema1_prueba_7(self):
+		plazo = 360
+		montoInversion = 50001
+		premio = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
+		self.assertEqual(premio,"Tipo de premio: tv led LG")
 
-	# def test_tema1_prueba_8(self):
-	# 	plazo = 360
-	# 	montoInversion = 20005
-	# 	premio = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
-	# 	self.assertEqual(premio,"Tipo de premio: tablet samsumg")
+	def test_tema1_prueba_8(self):
+		plazo = 360
+		montoInversion = 20001
+		premio = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
+		self.assertEqual(premio,"Tipo de premio: tablet samsumg")
 
-	# def test_tema1_prueba_9(self):
-	# 	plazo = 360
-	# 	montoInversion = 10005
-	# 	premio = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
-	# 	self.assertEqual(premio,"Tipo de premio: microondas electrolux")
+	def test_tema1_prueba_9(self):
+		plazo = 360
+		montoInversion = 10001
+		premio = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
+		self.assertEqual(premio,"Tipo de premio: microondas electrolux")
 
 #CASOS PRUEBA TEMA 2
 	def test_tema2_prueba_1(self):

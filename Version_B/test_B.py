@@ -35,7 +35,7 @@ class Test(unittest.TestCase):
 		self.assertEquals(msg,"Tipo de premio: licuadora electrolux")
 	
 	def test_tema1_prueba_7(self):
-		msg=tema1.premio_por_deposito_a_plazo_fijo(360,65001)
+		msg=tema1.premio_por_deposito_a_plazo_fijo(360,50001)
 		self.assertEquals(msg,"Tipo de premio: tv led LG")
 	
 	def test_tema1_prueba_8(self):

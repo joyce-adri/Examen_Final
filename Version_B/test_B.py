@@ -44,15 +44,14 @@ class Test(unittest.TestCase):
         else:
             return "Recibe premio"
 
-    #Caso de prueba 1
     def test_tema1_prueba_1(self):
         # inserte su codigo de prueba
-        mensaje_plazo_1 = self.Test.validar_plazo_dias_1(120)
+        #mensaje_plazo_1 = self.Test.validar_plazo_dias_1(120)
         mensaje_monto_1 = self.Test.validar_monto(10000)
-        mensaje_1 = mensaje_monto_1 + mensaje_plazo_1
-        if ("No recibe premio" in mensaje_1):
-            mensaje_1 = "No recibe premio"
-        self.assertEquals(mensaje_1, "No recibe premio")
+        #mensaje_1 = mensaje_monto_1 + mensaje_plazo_1
+        #if ("No recibe premio" in mensaje_1):
+         #   mensaje_1 = "No recibe premio"
+        self.assertEquals(mensaje_monto_1, "No recibe premio")
 
     def test_tema2_prueba_ID(self):
         # inserte su codigo de prueba

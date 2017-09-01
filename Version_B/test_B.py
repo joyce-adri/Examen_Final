@@ -15,6 +15,11 @@ class Test(unittest.TestCase):
 		p=tema1.premio_por_deposito_a_plazo_fijo(120,50001)
 		self.assertEqual(p,"Tipo de premio: mini nevera electrolux")
 
+	def test_tema1_prueba_2(self):
+		# inserte su codigo de prueba
+		p=tema1.premio_por_deposito_a_plazo_fijo(120,20001)
+		self.assertEqual(p,"Tipo de premio: aspiradora electrolux")
+
 	
 if __name__ == '__main__':
 	unittest.main()

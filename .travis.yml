@@ -10,6 +10,6 @@ script:
   #- "python -m coverage run Version_A/test_A.py"
   
   # Para ejecutar pruebas del examen versión B:
-  - "python -m coverage run Version_B/test_B.py"
+  #- "python -m coverage run Version_B/test_B.py"
 
 after_script: "coveralls"

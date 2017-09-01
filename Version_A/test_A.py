@@ -51,5 +51,9 @@ class Test(unittest.TestCase):
         msg = tema1.etiquetado_consumo_energia(61)
         self.assertEqual(msg,"escala: B , eficiencia: los más eficientes")
 
+    def test_tema1_5(self):
+        msg = tema1.etiquetado_consumo_energia(82)
+        self.assertEqual(msg,"escala: C , eficiencia: los más eficientes")
+
 if __name__ == '__main__':
     unittest.main()

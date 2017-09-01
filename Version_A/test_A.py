@@ -17,10 +17,10 @@ class Test(unittest.TestCase):
         mensaje = tema1.etiquetado_consumo_energia(porcentaje)
         self.assertEquals(mensaje, "escala: E , eficiencia: consumo medio")
 
-    #def test_tema2_prueba_3(self):
-     #   porcentaje = 130
-      #  mensaje = tema1.etiquetado_consumo_energia(porcentaje)
-       # self.assertEquals(mensaje, "escala: G , eficiencia: alto consumo energético")
+    def test_tema2_prueba_3(self):
+        porcentaje = 130
+        mensaje = tema1.etiquetado_consumo_energia(porcentaje)
+        self.assertEquals(mensaje, "escala: G , eficiencia: alto consumo energético")
 
 if __name__ == '__main__':
     unittest.main()

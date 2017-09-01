@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 import unittest
 import tema1
-import tema2
+#import tema2
 
 from tema1 import etiquetado_consumo_energia
 #from tema2 import clasificacion_clientes

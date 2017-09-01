@@ -30,6 +30,11 @@ class Test(unittest.TestCase):
         etiqueta = tema1.etiquetado_consumo_energia(60);
         self.assertEqual(etiqueta, "escala: B , eficiencia: los más eficientes");
 
+    #tema 1 prueba 5 con un porcentaje de consumo de energía del 82%
+    def test_tema1_prueba_5(self):
+        etiqueta = tema1.etiquetado_consumo_energia(82);
+        self.assertEqual(etiqueta, "escala: C , eficiencia: los más eficientes");
+
 
 
 if __name__ == '__main__':

@@ -10,12 +10,26 @@ class Test(unittest.TestCase):
 
 # >>>>>> Estructura para la codificacion de los casos de prueba <<<<<<
 # Reemplazar EL ID por el numero correspondiente del caso de prueba
-    '''
+
     def test_tema1_prueba_1(self):
         plazo = 120
         montoInversion = 50002
         premio = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
         self.assertEquals(premio, "Tipo de premio: mini nevera electrolux")
+
+    def test_tema1_prueba_2(self):
+        plazo = 180
+        montoInversion = 50002
+        premio = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
+        self.assertEquals(premio, "Tipo de premio: minicomponente LG")
+
+    def test_tema1_prueba_3(self):
+        plazo = 360
+        montoInversion = 50002
+        premio = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
+        self.assertEquals(premio, "Tipo de premio: tv led LG")
+
+
     '''
     def test_tema2_prueba_1(self):
         tipoCliente = "AAA"
@@ -76,6 +90,6 @@ class Test(unittest.TestCase):
         monto = 2000
         tarjeta = tema2.ofrecer_tarjeta_con_chip(monto, tipoCliente)
         self.assertEquals(tarjeta, "Tipo de tarjeta: Clasica")
-
+    '''
 if __name__ == '__main__':
     unittest.main()

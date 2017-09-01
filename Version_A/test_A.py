@@ -22,5 +22,11 @@ class Test(unittest.TestCase):
         mensaje = tema1.etiquetado_consumo_energia(porcentaje)
         self.assertEquals(mensaje, "escala: G , eficiencia: alto consumo energético")
 
+    def test_tema2_prueba_1(self):
+        monto = 30000
+        informacion = True
+        mensaje = tema2.clasificacion_clientes(monto, informacion)
+        self.assertEquals(mensaje, "Tipo de cliente: AAA, Envio de boletin: Si")
+
 if __name__ == '__main__':
     unittest.main()

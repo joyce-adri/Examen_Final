@@ -10,7 +10,7 @@ class Test(unittest.TestCase):
     
 # >>>>>> Estructura para la codificacion de los casos de prueba <<<<<<
 # Reemplazar EL ID por el numero correspondiente del caso de prueba
-
+    # >>>>>> Tema 1
     def validar_plazo_dias_0(self):
         if (self == 120):
             return "!"
@@ -55,10 +55,10 @@ class Test(unittest.TestCase):
 
     def test_tema1_prueba_1(self):
         # inserte su codigo de prueba
-        mensaje_plazo_1 = self.Test.validar_plazo_dias_0(120)
-        mensaje_monto_1 = self.Test.validar_monto(10000)
-        mensaje_1 = mensaje_monto_1 + mensaje_plazo_1
-        self.assertEquals(mensaje_1, "No recibe premio!")
+        mensaje_plazo = self.Test.validar_plazo_dias_0(120)
+        mensaje_monto = self.Test.validar_monto(10000)
+        mensaje = mensaje_monto + mensaje_plazo
+        self.assertEquals(mensaje, "No recibe premio!")
 
     def test_tema1_prueba_2(self):
         mensaje_plazo_2 =self.Test.validar_plazo_dias_0(180)
@@ -68,43 +68,75 @@ class Test(unittest.TestCase):
 
     def test_tema1_prueba_3(self):
         # inserte su codigo de prueba
-        mensaje_plazo_3 = self.Test.validar_plazo_dias_0(360)
-        mensaje_monto_3 = self.Test.validar_monto(10000)
-        mensaje_3 = mensaje_monto_3 + mensaje_plazo_3
-        self.assertEquals(mensaje_3, "No recibe premio!")
+        mensaje_plazo = self.Test.validar_plazo_dias_0(360)
+        mensaje_monto = self.Test.validar_monto(10000)
+        mensaje = mensaje_monto + mensaje_plazo
+        self.assertEquals(mensaje, "No recibe premio!")
 
     def test_tema1_prueba_4(self):
         # inserte su codigo de prueba
-        mensaje_plazo_4 = self.Test.validar_plazo_dias_1(120)
-        mensaje_monto_4 = self.Test.validar_monto(10001)
-        mensaje_4 = mensaje_monto_4 + " " +  mensaje_plazo_4
-        self.assertEquals(mensaje_4, "Recibe premio! Arrocera Electrolux 1.8L")
+        mensaje_plazo = self.Test.validar_plazo_dias_1(120)
+        mensaje_monto = self.Test.validar_monto(10001)
+        mensaje = mensaje_monto + " " +  mensaje_plazo
+        self.assertEquals(mensaje, "Recibe premio! Arrocera Electrolux 1.8L")
 
     def test_tema1_prueba_5(self):
         # inserte su codigo de prueba
-        mensaje_plazo_4 = self.Test.validar_plazo_dias_1(180)
-        mensaje_monto_4 = self.Test.validar_monto(10001)
-        mensaje_4 = mensaje_monto_4 + " " +  mensaje_plazo_4
-        self.assertEquals(mensaje_4, "Recibe premio! Licuadora 5 velocidades Electrolux")
+        mensaje_plazo = self.Test.validar_plazo_dias_1(180)
+        mensaje_monto = self.Test.validar_monto(10001)
+        mensaje = mensaje_monto + " " +  mensaje_plazo
+        self.assertEquals(mensaje, "Recibe premio! Licuadora 5 velocidades Electrolux")
 
     def test_tema1_prueba_6(self):
         # inserte su codigo de prueba
-        mensaje_plazo_4 = self.Test.validar_plazo_dias_1(360)
-        mensaje_monto_4 = self.Test.validar_monto(10001)
-        mensaje_4 = mensaje_monto_4 + " " +  mensaje_plazo_4
-        self.assertEquals(mensaje_4, "Recibe premio! Microondas Electrolix 20L")
+        mensaje_plazo = self.Test.validar_plazo_dias_1(360)
+        mensaje_monto = self.Test.validar_monto(10001)
+        mensaje = mensaje_monto + " " +  mensaje_plazo
+        self.assertEquals(mensaje, "Recibe premio! Microondas Electrolix 20L")
 
+    def test_tema1_prueba_7(self):
+        # inserte su codigo de prueba
+        mensaje_plazo = self.Test.validar_plazo_dias_2(120)
+        mensaje_monto = self.Test.validar_monto(20001)
+        mensaje = mensaje_monto + " " +  mensaje_plazo
+        self.assertEquals(mensaje, "Aspiradora Electrolux")
 
+    def test_tema1_prueba_8(self):
+        # inserte su codigo de prueba
+        mensaje_plazo = self.Test.validar_plazo_dias_2(180)
+        mensaje_monto = self.Test.validar_monto(20001)
+        mensaje = mensaje_monto + " " +  mensaje_plazo
+        self.assertEquals(mensaje, "Recibe premio! Samsung Galaxy J1")
 
+    def test_tema1_prueba_9(self):
+        # inserte su codigo de prueba
+        mensaje_plazo = self.Test.validar_plazo_dias_2(360)
+        mensaje_monto = self.Test.validar_monto(20001)
+        mensaje = mensaje_monto + " " +  mensaje_plazo
+        self.assertEquals(mensaje, "Recibe premio! Tablet Samsung")
 
+    def test_tema1_prueba_10(self):
+        # inserte su codigo de prueba
+        mensaje_plazo = self.Test.validar_plazo_dias_3(120)
+        mensaje_monto = self.Test.validar_monto(50001)
+        mensaje = mensaje_monto + " " +  mensaje_plazo
+        self.assertEquals(mensaje, "Recibe premio! Mini nevera 5 pies Electrolux")
 
+    def test_tema1_prueba_11(self):
+        # inserte su codigo de prueba
+        mensaje_plazo = self.Test.validar_plazo_dias_3(180)
+        mensaje_monto = self.Test.validar_monto(50001)
+        mensaje = mensaje_monto + " " +  mensaje_plazo
+        self.assertEquals(mensaje, "Minicomponente LG")
 
+    def test_tema1_prueba_12(self):
+        # inserte su codigo de prueba
+        mensaje_plazo = self.Test.validar_plazo_dias_3(360)
+        mensaje_monto = self.Test.validar_monto(50001)
+        mensaje = mensaje_monto + " " +  mensaje_plazo
+        self.assertEquals(mensaje, "Recibe premio! Tv LED 32' LG")
 
-
-
-
-
-
+    # >>>>>> Tema 2
 
     def test_tema2_prueba_ID(self):
         # inserte su codigo de prueba

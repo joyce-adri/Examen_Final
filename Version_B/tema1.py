@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 class Banco:
 
-    def premios_depositos_plazo_fijo(dias, monto):
+    def premios_depositos_plazo_fijo(self,dias, monto):
         if (dias == 120):
             if(monto>=10.001 and monto <=20000):
                 return "Arrocera Electrolux 1.8L"

@@ -64,9 +64,47 @@ class Test(unittest.TestCase):
         esperado = "escala: %s , eficiencia: %s" % ("G", "alto consumo energético")
         self.assertEquals(etiqueta, esperado)
 
-    #def test_tema2_prueba_ID(self):
+    def test_tema2_prueba_1(self):
         # inserte su codigo de prueba
-        #self.assertEquals()
+        clasificacion = tema2.clasificacion_clientes(0, False)
+        esperado = "Tipo de cliente: %s, Envio de boletin: %s" % ("no es digno de crédito", "No")
+        self.assertEquals(clasificacion, esperado)
+
+    def test_tema2_prueba_2(self):
+        # inserte su codigo de prueba
+        clasificacion = tema2.clasificacion_clientes(30000, True)
+        esperado = "Tipo de cliente: %s, Envio de boletin: %s" % ("AAA", "Si")
+        self.assertEquals(clasificacion, esperado)
+
+    def test_tema2_prueba_3(self):
+        # inserte su codigo de prueba
+        clasificacion = tema2.clasificacion_clientes(20000, True)
+        esperado = "Tipo de cliente: %s, Envio de boletin: %s" % ("AA", "Si")
+        self.assertEquals(clasificacion, esperado)
+
+    def test_tema2_prueba_4(self):
+        # inserte su codigo de prueba
+        clasificacion = tema2.clasificacion_clientes(15000, True)
+        esperado = "Tipo de cliente: %s, Envio de boletin: %s" % ("A", "Si")
+        self.assertEquals(clasificacion, esperado)
+
+    def test_tema2_prueba_5(self):
+        # inserte su codigo de prueba
+        clasificacion = tema2.clasificacion_clientes(10000, True)
+        esperado = "Tipo de cliente: %s, Envio de boletin: %s" % ("B", "Si")
+        self.assertEquals(clasificacion, esperado)
+
+    def test_tema2_prueba_6(self):
+        # inserte su codigo de prueba
+        clasificacion = tema2.clasificacion_clientes(5000, True)
+        esperado = "Tipo de cliente: %s, Envio de boletin: %s" % ("C", "Si")
+        self.assertEquals(clasificacion, esperado)
+
+    def test_tema2_prueba_7(self):
+        # inserte su codigo de prueba
+        clasificacion = tema2.clasificacion_clientes(1000, True)
+        esperado = "Tipo de cliente: %s, Envio de boletin: %s" % ("no es digno de crédito", "Si")
+        self.assertEquals(clasificacion, esperado)
 
 if __name__ == '__main__':
     unittest.main()

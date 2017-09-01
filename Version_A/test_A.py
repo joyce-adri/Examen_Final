@@ -34,9 +34,9 @@ class Test(unittest.TestCase):
 		result = tema1.etiquetado_consumo_energia(95)
 		self.assertEquals(result, "escala: D , eficiencia: consumo medio", "failure")
 
-	# def test_tema1_prueba_7(self):
-	# 	result = tema1.etiquetado_consumo_energia(105)
-	# 	self.assertEquals(result, "escala: E , eficiencia: consumo medio", "failure")
+	def test_tema1_prueba_7(self):
+		result = tema1.etiquetado_consumo_energia(105)
+		self.assertEquals(result, "escala: E , eficiencia: consumo medio", "failure")
 
 	# def test_tema1_prueba_8(self):
 	# 	result = tema1.etiquetado_consumo_energia(110)

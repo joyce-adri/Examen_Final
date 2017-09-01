@@ -17,7 +17,8 @@ def premio_por_deposito_a_plazo_fijo(plazo, montoInversion):
             premio = "samsumg galaxy J1"
         elif montoInversion >= 10001 and montoInversion < 20001:
             premio = "licuadora electrolux"
-    elif plazo is 360:
+    elif plazo == 360:
+        print "entraste"
         if montoInversion >= 50001:
             premio = "tv led LG"
         elif montoInversion >= 20001 and montoInversion < 50001:

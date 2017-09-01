@@ -6,6 +6,8 @@ import tema1
 import tema2
 
 from tema1 import etiquetado_consumo_energia
+#from tema2 import clasificacion_clientes
+
 class Test(unittest.TestCase):
     
 # >>>>>> Estructura para la codificacion de los casos de prueba <<<<<<
@@ -44,11 +46,11 @@ class Test(unittest.TestCase):
     def test_tema1_prueba_10(self):
         eti = etiquetado_consumo_energia(-10)
         self.assertEquals(eti, "escala: ninguna , eficiencia: ninguno")
-	#============================================#
+    #============================================#
 """
-    def test_tema2_prueba_ID(self):
-        # inserte su codigo de prueba
-        self.assertEquals()
+    def test_tema2_prueba_1(self):
+        msj = clasificacion_clientes(5000, False)
+        self.assertEquals(msj, "Tipo de cliente: no es digno de crédito, Envio de boletin: No")
 """
 
 if __name__ == '__main__':

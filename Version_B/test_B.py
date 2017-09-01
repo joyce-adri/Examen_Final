@@ -2,8 +2,8 @@
 from __future__ import unicode_literals
 
 import unittest
-import tema1
-import tema2
+from tema1 import *
+from tema2 import *
 
 class Test(unittest.TestCase):
     
@@ -47,9 +47,50 @@ class Test(unittest.TestCase):
         self.assertEquals(premio, "tv led 32 lg")
 
 
-    #def test_tema2_prueba_ID(self):
-     #   # inserte su codigo de prueba
-     #   self.assertEquals()
+    def test_tema2_prueba_1(self):
+        tarjeta = Tarjeta().obtener("AAA", 30000)
+        self.assertEquals(tarjeta, "gold")
+
+    def test_tema2_prueba_2(self):
+        tarjeta = Tarjeta().obtener("AA", 17000)
+        self.assertEquals(tarjeta, "platinum")
+
+    def test_tema2_prueba_3(self):
+        tarjeta = Tarjeta().obtener("A", 12000)
+        self.assertEquals(tarjeta, "internacional")
+
+    def test_tema2_prueba_4(self):
+        tarjeta = Tarjeta().obtener("B", 8000)
+        self.assertEquals(tarjeta, "club miles")
+
+    def test_tema2_prueba_5(self):
+        tarjeta = Tarjeta().obtener("C", 3000)
+        self.assertEquals(tarjeta, "advantage")
+
+    def test_tema2_prueba_6(self):
+        tarjeta = Tarjeta().obtener("AAA", 10000)
+        self.assertEquals(tarjeta, "-")
+
+    def test_tema2_prueba_7(self):
+        tarjeta = Tarjeta().obtener("AA", 9000)
+        self.assertEquals(tarjeta, "-")
+
+    def test_tema2_prueba_8(self):
+        tarjeta = Tarjeta().obtener("A", 7000)
+        self.assertEquals(tarjeta, "-")
+
+    def test_tema2_prueba_9(self):
+        tarjeta = Tarjeta().obtener("B", 2000)
+        self.assertEquals(tarjeta, "-")
+
+    def test_tema2_prueba_10(self):
+        tarjeta = Tarjeta().obtener("C", 1000)
+        self.assertEquals(tarjeta, "-")
+
+    def test_tema2_prueba_11(self):
+        tarjeta = Tarjeta().obtener("D", 100)
+        self.assertEquals(tarjeta, "-")
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -6,10 +6,10 @@ before_install: "pip install -r requirements.txt"
 
 script:
 
-  # Para ejecutar pruebas del examen versión A:
-  #- "python -m coverage run Version_A/test_A.py"
-  
   # Para ejecutar pruebas del examen versión B:
-  - "python -m coverage run Version_B/test_B.py"
+  #- "python -m coverage run Version_B/test_B.py"
+  
+  # Para ejecutar pruebas del examen versión A:
+  - "python -m coverage run Version_A/test_A.py"
 
 after_script: "coveralls"

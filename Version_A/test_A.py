@@ -12,11 +12,17 @@ class Test(unittest.TestCase):
     
     def test_tema1_prueba_ID(self):
         # inserte su codigo de prueba
-        self.assertEquals()
+        #Prueba 1
+        self.assertEqual(tema1.etiquetado_consumo_energia(29),"escala: A++ , eficiencia: los más eficientes")
+        #Prueba 2
+        self.assertEqual(tema1.etiquetado_consumo_energia(30),"escala: A+ , eficiencia: los más eficientes")
+        #Prueba 3
+        self.assertEquals(tema1.etiquetado_consumo_energia(42),"escala: A , eficiencia: los más eficientes")
+        #self.assertEquals()
 
-    def test_tema2_prueba_ID(self):
+    #def test_tema2_prueba_ID(self):
         # inserte su codigo de prueba
-        self.assertEquals()
+    #    self.assertEquals()
 
 if __name__ == '__main__':
     unittest.main()

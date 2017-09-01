@@ -52,11 +52,11 @@ class Test(unittest.TestCase):
         mensaje = tema2.clasificacion_clientes(monto, informacion)
         self.assertEquals(mensaje, "Tipo de cliente: B, Envio de boletin: Si")
 
-    #def test_tema2_prueba_6(self):
-     #   monto = 8000
-      #  informacion = True
-       # mensaje = tema2.clasificacion_clientes(monto, informacion)
-        #self.assertEquals(mensaje, "Tipo de cliente: C, Envio de boletin: Si")
+    def test_tema2_prueba_6(self):
+        monto = 8000
+        informacion = True
+        mensaje = tema2.clasificacion_clientes(monto, informacion)
+        self.assertEquals(mensaje, "Tipo de cliente: C, Envio de boletin: Si")
 
     #def test_tema2_prueba_7(self):
      #   monto = 2000

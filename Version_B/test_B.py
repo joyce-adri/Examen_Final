@@ -93,5 +93,8 @@ class Test(unittest.TestCase):
 	#id:16
 		msg=ofrecer_tarjeta_con_chip(3003, "F")
 		self.assertEquals(msg,"Tipo de tarjeta: Clasica")
+	def test_tema17_prueba_ID(self):
+		msg=ofrecer_tarjeta_con_chip(30,"C")
+		self.assertEquals(msg,"Tipo de tarjeta: Clasica")
 if __name__ == '__main__':
     unittest.main()

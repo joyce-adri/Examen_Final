@@ -50,7 +50,6 @@ class Test(unittest.TestCase):
          porcentaje1 = etiquetado_consumo_energia(115)
          self.assertEquals(porcentaje1, "escala: alto consumo energético , eficiencia: F ")
 
-
     def test_tema1_prueba_9(self):
         porcentaje1 = etiquetado_consumo_energia(125)
         self.assertEquals(porcentaje1, "escala: alto conmsumo energético , eficiencia: G ")

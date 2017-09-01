@@ -66,5 +66,9 @@ class Test(unittest.TestCase):
 		result = tema2.clasificacion_clientes(12000, True)
 		self.assertEquals(result, "Tipo de cliente: B, Envio de boletin: Si", "failure")
 
+	def test_tema2_prueba_6(self):
+		result = tema2.clasificacion_clientes(7000, True)
+		self.assertEquals(result, "Tipo de cliente: C, Envio de boletin: Si", "failure")
+
 if __name__ == '__main__':
 	unittest.main()

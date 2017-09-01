@@ -9,10 +9,88 @@ class Test(unittest.TestCase):
     
 # >>>>>> Estructura para la codificacion de los casos de prueba <<<<<<
 # Reemplazar EL ID por el numero correspondiente del caso de prueba
-    
-    #def test_tema1_prueba_ID(self):
+
+    def test_tema1_prueba_1A(self):
         # inserte su codigo de prueba
-    #    self.assertEquals()
+        msg = tema1.etiquetado_consumo_energia(0)
+        print msg
+        self.assertEquals(msg,"escala: A++ , eficiencia: los más eficientes")
+
+
+    def test_tema1_prueba_2B(self):
+        # inserte su codigo de prueba
+        msg = tema1.etiquetado_consumo_energia(29)
+        print msg
+        self.assertEquals(msg, "escala: A++ , eficiencia: los más eficientes")
+
+
+    def test_tema1_prueba_3C(self):
+        # inserte su codigo de prueba
+        msg = tema1.etiquetado_consumo_energia(30)
+        print msg
+        self.assertEquals(msg, "escala: A+ , eficiencia: los más eficientes")
+
+
+    def test_tema1_prueba_4D(self):
+        # inserte su codigo de prueba
+        msg = tema1.etiquetado_consumo_energia(42)
+        print msg
+        self.assertEquals(msg, "escala: A , eficiencia: los más eficientes")
+
+
+    def test_tema1_prueba_5E(self):
+        # inserte su codigo de prueba
+        msg = tema1.etiquetado_consumo_energia(55)
+        print msg
+        self.assertEquals(msg, "escala: B , eficiencia: los más eficientes")
+
+
+    def test_tema1_prueba_6F(self):
+            # inserte su codigo de prueba
+            msg = tema1.etiquetado_consumo_energia(75)
+            print msg
+            self.assertEquals(msg,"escala: C , eficiencia: los más eficientes")
+
+
+    def test_tema1_prueba_7G(self):
+        # inserte su codigo de prueba
+        msg = tema1.etiquetado_consumo_energia(90)
+        print msg
+        self.assertEquals(msg, "escala: D , eficiencia: consumo medio")
+
+    def test_tema1_prueba_8H(self):
+        # inserte su codigo de prueba
+        msg = tema1.etiquetado_consumo_energia(91)
+        print msg
+        self.assertEquals(msg, "escala: D , eficiencia: consumo medio")
+
+    def test_tema1_prueba_9I(self):
+        # inserte su codigo de prueba
+        msg = tema1.etiquetado_consumo_energia(100)
+        print msg
+        self.assertEquals(msg, "escala: E , eficiencia: consumo medio")
+
+    def test_tema1_prueba_10J(self):
+        # inserte su codigo de prueba
+        msg = tema1.etiquetado_consumo_energia(110)
+        print msg
+        self.assertEquals(msg, "escala: F , eficiencia: alto consumo energético")
+
+    def test_tema1_prueba_11K(self):
+        # inserte su codigo de prueba
+        msg = tema1.etiquetado_consumo_energia(126)
+        print msg
+        self.assertEquals(msg, "escala: G , eficiencia: alto consumo energético")
+
+
+
+
+
+
+
+
+########################################################################################################################
+
 
     def test_tema2_prueba_1A(self):
         # inserte su codigo de prueba

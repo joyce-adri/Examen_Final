@@ -56,9 +56,68 @@ class Test(unittest.TestCase):
         porcentaje = 130
         self.assertEquals(res, tema1.etiquetado_consumo_energia(porcentaje))
 
-    # def test_tema2_prueba_ID(self):
-        # inserte su codigo de prueba
-        # self.assertEquals()
+    def test_tema2_1(self):
+        clasificacionCliente = "no es digno de crédito"
+        enviarBoletinInformativo = "No"
+        montoDepositado = 5000
+        informacionBuro = False
+        esp = "Tipo de cliente: %s, Envio de boletin: %s" % (clasificacionCliente, enviarBoletinInformativo)
+        res = tema2.clasificacion_clientes(montoDepositado, informacionBuro)
+        self.assertEquals(esp, res)
+
+    def test_tema2_2(self):
+        clasificacionCliente = "C"
+        enviarBoletinInformativo = "Si"
+        montoDepositado = 6000
+        informacionBuro = True
+        esp = "Tipo de cliente: %s, Envio de boletin: %s" % (clasificacionCliente, enviarBoletinInformativo)
+        res = tema2.clasificacion_clientes(montoDepositado, informacionBuro)
+        self.assertEquals(esp, res)
+
+    def test_tema2_3(self):
+        clasificacionCliente = "B"
+        enviarBoletinInformativo = "Si"
+        montoDepositado = 12000
+        informacionBuro = True
+        esp = "Tipo de cliente: %s, Envio de boletin: %s" % (clasificacionCliente, enviarBoletinInformativo)
+        res = tema2.clasificacion_clientes(montoDepositado, informacionBuro)
+        self.assertEquals(esp, res)
+
+    def test_tema2_4(self):
+        clasificacionCliente = "A"
+        enviarBoletinInformativo = "Si"
+        montoDepositado = 16000
+        informacionBuro = True
+        esp = "Tipo de cliente: %s, Envio de boletin: %s" % (clasificacionCliente, enviarBoletinInformativo)
+        res = tema2.clasificacion_clientes(montoDepositado, informacionBuro)
+        self.assertEquals(esp, res)
+
+    def test_tema2_5(self):
+        clasificacionCliente = "AA"
+        enviarBoletinInformativo = "Si"
+        montoDepositado = 22000
+        informacionBuro = True
+        esp = "Tipo de cliente: %s, Envio de boletin: %s" % (clasificacionCliente, enviarBoletinInformativo)
+        res = tema2.clasificacion_clientes(montoDepositado, informacionBuro)
+        self.assertEquals(esp, res)
+    def test_tema2_6(self):
+
+        clasificacionCliente = "AAA"
+        enviarBoletinInformativo = "Si"
+        montoDepositado = 32000
+        informacionBuro = True
+        esp = "Tipo de cliente: %s, Envio de boletin: %s" % (clasificacionCliente, enviarBoletinInformativo)
+        res = tema2.clasificacion_clientes(montoDepositado, informacionBuro)
+        self.assertEquals(esp, res)
+
+    def test_tema2_7(self):
+        clasificacionCliente = "no es digno de crédito"
+        enviarBoletinInformativo = "Si"
+        montoDepositado = 3000
+        informacionBuro = True
+        esp = "Tipo de cliente: %s, Envio de boletin: %s" % (clasificacionCliente, enviarBoletinInformativo)
+        res = tema2.clasificacion_clientes(montoDepositado, informacionBuro)
+        self.assertEquals(esp, res)
 
 if __name__ == '__main__':
     unittest.main()

@@ -5,6 +5,7 @@ import unittest
 import tema1
 import tema2
 
+"prueba"
 class Test(unittest.TestCase):
     
 # >>>>>> Estructura para la codificacion de los casos de prueba <<<<<<

@@ -128,9 +128,86 @@ class Test(unittest.TestCase):
             mensaje = ("Fuera de Rango de días")
         self.assertEquals(mensaje,"Tv LED 32' LG")
 
-    def test_tema2_prueba_ID(self):
+    def test_tema2_prueba_1(self):
         # inserte su codigo de prueba
-        self.assertEquals()
+        TipoCliente = "AAA"
+        monto = 30000
+        mensaje = "Clasica"
+        if(TipoCliente=="AAA" and monto>=20000):
+            mensaje=("Gold")
+        self.assertEquals(mensaje,"Gold")
+    def test_tema2_prueba_2(self):
+        # inserte su codigo de prueba
+        TipoCliente = "AA"
+        monto = 16000
+        mensaje = "Clasica"
+        if(TipoCliente=="AA" and monto>=15000):
+            mensaje=("Platinum")
+        self.assertEquals(mensaje,"Platinum")
+    def test_tema2_prueba_3(self):
+        # inserte su codigo de prueba
+        TipoCliente = "AA"
+        monto = 16000
+        mensaje = "Clasica"
+        if(TipoCliente=="AA" and monto<20000):
+            mensaje=("Platinum")
+        self.assertEquals(mensaje,"Platinum")
+    def test_tema2_prueba_4(self):
+        # inserte su codigo de prueba
+        TipoCliente = "A"
+        monto = 11000
+        mensaje = "Clasica"
+        if(TipoCliente=="A" and monto>=10000):
+            mensaje=("Internacional")
+        self.assertEquals(mensaje,"Internacional")
+    def test_tema2_prueba_5(self):
+        # inserte su codigo de prueba
+        TipoCliente = "A"
+        monto = 11000
+        mensaje = "Clasica"
+        if(TipoCliente=="A" and monto<15000):
+            mensaje=("Internacional")
+        self.assertEquals(mensaje,"Internacional")
+    def test_tema2_prueba_6(self):
+        # inserte su codigo de prueba
+        TipoCliente = "B"
+        monto = 6000
+        mensaje = "Clasica"
+        if(TipoCliente=="B" and monto>=5000):
+            mensaje=("Club Miles")
+        self.assertEquals(mensaje,"Club Miles")
+    def test_tema2_prueba_7(self):
+        # inserte su codigo de prueba
+        TipoCliente = "B"
+        monto = 6000
+        mensaje = "Clasica"
+        if(TipoCliente=="B" and monto<10000):
+            mensaje=("Club Miles")
+        self.assertEquals(mensaje,"Club Miles")
+    def test_tema2_prueba_8(self):
+        # inserte su codigo de prueba
+        TipoCliente = "AAA"
+        monto = 30000
+        mensaje = "Clasica"
+        if(TipoCliente=="AAA" and monto>=20000):
+            mensaje=("Gold")
+        self.assertEquals(mensaje,"Gold")
+    def test_tema2_prueba_9(self):
+        # inserte su codigo de prueba
+        TipoCliente = "AAA"
+        monto = 30000
+        mensaje = "Clasica"
+        if(TipoCliente=="AAA" and monto>=20000):
+            mensaje=("Gold")
+        self.assertEquals(mensaje,"Gold")
+    def test_tema2_prueba_10(self):
+        # inserte su codigo de prueba
+        TipoCliente = "AAA"
+        monto = 30000
+        mensaje = "Clasica"
+        if(TipoCliente=="AAA" and monto>=20000):
+            mensaje=("Gold")
+        self.assertEquals(mensaje,"Gold")
 
 if __name__ == '__main__':
     unittest.main()

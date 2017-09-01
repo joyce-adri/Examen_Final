@@ -6,7 +6,7 @@
 Instrucciones 
 
 1) Crear una rama con su nombre completo ejemplo:
->> git checkout -b joyce_adriana_sarmiento
+>> comando de git : nombre_apellido1_apellido2
 
 2) De acuerdo a la versión del examen A o B ingresar a los folder denominados:
 Version_A o Version_B

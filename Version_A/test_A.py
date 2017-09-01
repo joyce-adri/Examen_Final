@@ -40,5 +40,17 @@ class Test(unittest.TestCase):
         mensaje = tema2.clasificacion_clientes(monto, informacion)
         self.assertEquals(mensaje, "Tipo de cliente: AA, Envio de boletin: Si")
 
+    def test_tema2_prueba_4(self):
+        monto = 18000
+        informacion = True
+        mensaje = tema2.clasificacion_clientes(monto, informacion)
+        self.assertEquals(mensaje, "Tipo de cliente: A, Envio de boletin: Si")
+
+    #def test_tema2_prueba_5(self):
+     #   monto = 12000
+      #  informacion = True
+       # mensaje = tema2.clasificacion_clientes(monto, informacion)
+        #self.assertEquals(mensaje, "Tipo de cliente: B, Envio de boletin: Si")
+
 if __name__ == '__main__':
     unittest.main()

@@ -134,7 +134,7 @@ class Test(unittest.TestCase):
         #ID caso 13 con plazo = 360 y monto de Inversion = 50001
         msg = premio_por_deposito_a_plazo_fijo(360,50001)
         self.assertEquals(msg, "Tipo de premio: tv led LG")
-    """
+
     def test_tema2_prueba_1(self):
         # inserte su codigo de prueba
         #ID caso 1 con plazo = 60 y monto de Inversion = 10000
@@ -201,7 +201,7 @@ class Test(unittest.TestCase):
         msg = ofrecer_tarjeta_con_chip(30000,"F")
         self.assertEquals(msg, "Tipo de tarjeta: Clasica")
 
-    """
+
     """
     def test_tema2_prueba_ID(self):
         # inserte su codigo de prueba

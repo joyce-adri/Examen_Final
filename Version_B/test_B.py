@@ -11,11 +11,12 @@ class Test(unittest.TestCase):
 # >>>>>> Estructura para la codificacion de los casos de prueba <<<<<<
 # Reemplazar EL ID por el numero correspondiente del caso de prueba
     '''
-    def test_tema1_prueba_ID(self):
-        # inserte su codigo de prueba
-        self.assertEquals()
+    def test_tema1_prueba_1(self):
+        plazo = 120
+        montoInversion = 50002
+        premio = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
+        self.assertEquals(premio, "Tipo de premio: mini nevera electrolux")
     '''
-
     def test_tema2_prueba_1(self):
         tipoCliente = "AAA"
         monto = 20001
@@ -51,6 +52,30 @@ class Test(unittest.TestCase):
         monto = 4000
         tarjeta = tema2.ofrecer_tarjeta_con_chip(monto, tipoCliente)
         self.assertEquals(tarjeta, "Tipo de tarjeta: Advantage")
+
+    def test_tema2_prueba_7(self):
+        tipoCliente = "AA"
+        monto = 13000
+        tarjeta = tema2.ofrecer_tarjeta_con_chip(monto, tipoCliente)
+        self.assertEquals(tarjeta, "Tipo de tarjeta: Clasica")
+
+    def test_tema2_prueba_8(self):
+        tipoCliente = "A"
+        monto = 9000
+        tarjeta = tema2.ofrecer_tarjeta_con_chip(monto, tipoCliente)
+        self.assertEquals(tarjeta, "Tipo de tarjeta: Clasica")
+
+    def test_tema2_prueba_9(self):
+        tipoCliente = "B"
+        monto = 4000
+        tarjeta = tema2.ofrecer_tarjeta_con_chip(monto, tipoCliente)
+        self.assertEquals(tarjeta, "Tipo de tarjeta: Clasica")
+
+    def test_tema2_prueba_10(self):
+        tipoCliente = "C"
+        monto = 2000
+        tarjeta = tema2.ofrecer_tarjeta_con_chip(monto, tipoCliente)
+        self.assertEquals(tarjeta, "Tipo de tarjeta: Clasica")
 
 if __name__ == '__main__':
     unittest.main()

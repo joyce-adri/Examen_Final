@@ -18,8 +18,8 @@
       <file leaf-file-name="test_A.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_A.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="32" column="44" lean-forward="false" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+            <state relative-caret-position="238">
+              <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -28,8 +28,8 @@
       <file leaf-file-name="tema1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tema1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="374">
+              <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -263,12 +263,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_A - 2017.09.01 at 08h 41m 30s.xml">
-      <configuration name="Unittests in test_A" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_A - 2017.09.01 at 08h 41m 45s.xml">
-      <configuration name="Unittests in test_A" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_A - 2017.09.01 at 08h 41m 51s.xml">
       <configuration name="Unittests in test_A" configurationId="tests" />
     </history-entry>
@@ -291,6 +285,12 @@
       <configuration name="Unittests in test_A" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_test_A - 2017.09.01 at 08h 53m 29s.xml">
+      <configuration name="Unittests in test_A" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_A - 2017.09.01 at 08h 54m 44s.xml">
+      <configuration name="Unittests in test_A" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_A - 2017.09.01 at 08h 54m 49s.xml">
       <configuration name="Unittests in test_A" configurationId="tests" />
     </history-entry>
   </component>
@@ -335,16 +335,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tema1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="30" />
+        <state relative-caret-position="374">
+          <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_A.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="32" column="44" lean-forward="false" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+        <state relative-caret-position="238">
+          <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
           <folding />
         </state>
       </provider>

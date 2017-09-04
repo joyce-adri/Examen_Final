@@ -81,6 +81,12 @@ class Test(unittest.TestCase):
         clasificacion = tema2.clasificacion_clientes(20000, True)
         esperado = "Tipo de cliente: %s, Envio de boletin: %s" % ("AA", "Si")
         self.assertEquals(clasificacion, esperado)
+        
+    def test_tema2_prueba_4(self):
+        # inserte su codigo de prueba
+        clasificacion = tema2.clasificacion_clientes(15000, True)
+        esperado = "Tipo de cliente: %s, Envio de boletin: %s" % ("A", "Si")
+        self.assertEquals(clasificacion, esperado)
     
 if __name__ == '__main__':
     unittest.main()

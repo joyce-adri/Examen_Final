@@ -52,5 +52,10 @@ class Test(unittest.TestCase):
         esperado = "escala: %s , eficiencia: %s" % ("E", "consumo medio")
         self.assertEquals(etiqueta, esperado)
 
+    def test_tema1_prueba_8(self):
+        # inserte su codigo de prueba
+        etiqueta = tema1.etiquetado_consumo_energia(110)
+        esperado = "escala: %s , eficiencia: %s" % ("F", "alto consumo energético")
+        self.assertEquals(etiqueta, esperado)
 if __name__ == '__main__':
     unittest.main()

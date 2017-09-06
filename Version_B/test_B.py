@@ -60,7 +60,7 @@ class Test(unittest.TestCase):
         resp = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
         self.assertEquals(resp, solucion)
     
-     def test_tema1_prueba_8(self):
+    def test_tema1_prueba_8(self):
         plazo = 360
         montoInversion = 20001
         solucion = "Tipo de premio: tablet samsumg"

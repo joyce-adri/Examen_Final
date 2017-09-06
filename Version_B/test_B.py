@@ -59,6 +59,13 @@ class Test(unittest.TestCase):
         solucion = "Tipo de premio: tv led LG"
         resp = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
         self.assertEquals(resp, solucion)
+    
+     def test_tema1_prueba_8(self):
+        plazo = 360
+        montoInversion = 20001
+        solucion = "Tipo de premio: tablet samsumg"
+        resp = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
+        self.assertEquals(resp, solucion)
         
 if __name__ == '__main__':
     unittest.main()

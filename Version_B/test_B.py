@@ -16,7 +16,14 @@ class Test(unittest.TestCase):
         montoInversion = 50001
         solucion = "Tipo de premio: mini nevera electrolux"
         resp = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
-        self.assertEquals(solucion, resp)
+        self.assertEquals(resp, solucion)
+        
+    def test_tema1_prueba_2(self):
+        plazo = 120
+        montoInversion = 20001
+        solucion = "Tipo de premio: aspiradora electrolux"
+        resp = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
+        self.assertEquals(resp, solucion)
 
 
 if __name__ == '__main__':

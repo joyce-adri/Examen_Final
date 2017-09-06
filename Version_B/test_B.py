@@ -73,6 +73,16 @@ class Test(unittest.TestCase):
         solucion = "Tipo de premio: microondas electrolux"
         resp = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
         self.assertEquals(resp, solucion)
+    
+#tema 2    
+    def test_tema2_prueba_1(self):
+		tipoCliente = 'AAA'
+		montoDeuda = 20000
+		tarjeta = tema2.ofrecer_tarjeta_con_chip(montoDeuda, tipoCliente)
+		self.assertEqual(tarjeta,"Tipo de tarjeta: Gold")
+
+
+        
         
 if __name__ == '__main__':
     unittest.main()

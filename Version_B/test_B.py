@@ -18,9 +18,6 @@ class Test(unittest.TestCase):
         resp = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
         self.assertEquals(solucion, resp)
 
-    def test_tema2_prueba_ID(self):
-        # inserte su codigo de prueba
-        self.assertEquals()
 
 if __name__ == '__main__':
     unittest.main()

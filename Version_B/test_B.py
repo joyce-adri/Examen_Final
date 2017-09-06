@@ -24,7 +24,14 @@ class Test(unittest.TestCase):
         solucion = "Tipo de premio: aspiradora electrolux"
         resp = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
         self.assertEquals(resp, solucion)
-
+        
+    def test_tema1_prueba_3(self):
+        plazo = 120
+        montoInversion = 10001
+        solucion = "Tipo de premio: arrocera electrolux"
+        resp = tema1.premio_por_deposito_a_plazo_fijo(plazo, montoInversion)
+        self.assertEquals(resp, solucion)
+        
 
 if __name__ == '__main__':
     unittest.main()

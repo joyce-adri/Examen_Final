@@ -117,7 +117,11 @@ class Test(unittest.TestCase):
 		tarjeta = tema2.ofrecer_tarjeta_con_chip(montoDeuda, tipoCliente)
 		self.assertEqual(tarjeta,"Tipo de tarjeta: Club Miles")   
  
-
+    def test_tema2_prueba_8(self):
+		tipoCliente = 'B'
+		montoDeuda = 4000
+		tarjeta = tema2.ofrecer_tarjeta_con_chip(montoDeuda, tipoCliente)
+		self.assertEqual(tarjeta,"Tipo de tarjeta: Clasica")
     
     
 if __name__ == '__main__':
